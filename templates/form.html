@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post">
+      {% csrf_token %}
+      <p>
+        Number1<input type="text" name="first" id="" /> <br />
+        Number2<input type="text" name="second" id="" /><br />
+        Sum<input type="text" name="sum" value="{{sum}}" id="" /> <br />
+
+        <input type="submit" name="add" value="+" />
+        <input type="submit"  name="sub" value="-"/>
+        <input type="submit"  name="mul" value="*"/>
+        <input type="submit" name="div" value="\" />
+      </p>
+    </form>
+  </body>
+</html>
